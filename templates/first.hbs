@@ -1,0 +1,13 @@
+<p>
+    Hello, my name is {{name}}. I am from {{hometown}}.
+    I have {{kids.length}} kids:
+</p>
+<ul>{{#each kids}}
+    <li>{{name}} is {{age}}</li>{{/each}}
+</ul>
+<div>{{#each parent}}
+    <span>{{@key}}: {{this}}</span>  {{/each}}
+</div>
+<div>{{#each cars}}
+    <div>{{this}}</div>{{/each}}
+</div>
